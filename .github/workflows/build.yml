@@ -23,10 +23,8 @@ jobs:
 
     - name: Install dependencies
       run: |
-        cd ci-cd   # Переходим в нужную директорию, если файл package.json там
         npm install
 
     - name: Build project
       run: |
-        cd ci-cd   # Переходим в нужную директорию, если файл package.json там
         npm run build
