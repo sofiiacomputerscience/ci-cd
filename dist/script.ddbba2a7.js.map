@@ -1,0 +1,1 @@
+{"version":3,"sources":["script.js"],"names":["console","log"],"mappings":";AACAA,QAAQC,IAAI","file":"script.ddbba2a7.js","sourceRoot":"..","sourcesContent":["// index.js\nconsole.log('Welcome to the Simple Website!');\n"]}
