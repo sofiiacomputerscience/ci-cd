@@ -1,4 +1,4 @@
-name: Build and Deploy Simple Website
+name: Build and Deploy
 
 on:
   push:
@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Check out the code
+    - name: Checkout code
       uses: actions/checkout@v2
 
     - name: Set up Node.js
@@ -23,13 +23,10 @@ jobs:
 
     - name: Install dependencies
       run: |
+        cd ci-cd   # Переходим в нужную директорию, если файл package.json там
         npm install
 
-    - name: Build the project
+    - name: Build project
       run: |
+        cd ci-cd   # Переходим в нужную директорию, если файл package.json там
         npm run build
-
-    - name: Deploy (optional)
-      run: |
-        echo "Deploying to production"
-
