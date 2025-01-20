@@ -1,5 +1,4 @@
 # ci-cd
-# helllo
 1. git log --reverse --pretty=format:"%h %an %ae %ad %s" | head -n 1
 349fdef michaelisvy misvy@vmware.com Wed Jan 9 01:05:18 2013 -0800 Initial commit
 2. git branch -r | wc -l
